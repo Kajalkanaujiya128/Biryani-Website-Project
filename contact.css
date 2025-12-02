@@ -1,0 +1,77 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+
+.contact-section {
+     padding: 150px 20px;
+    background: #fff8e1;
+    text-align: center; 
+    position: relative;
+    margin-top: 20px;
+    z-index: 990;
+}
+
+.contact-section h1 {
+    color: #2B2B2B;
+    margin-bottom: 20px;
+}
+
+.contact-section p{
+    margin-bottom: 15px;
+    color: #2B2B2B;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+select, input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Focus effect for inputs */
+select:focus,
+input:focus,
+textarea:focus {
+    border-color: #ff5722;  /* Orange border on focus */
+    box-shadow: 0 0 5px rgba(255,87,34,0.5); /* Optional glow */
+}
+
+/* Remove old + label CSS since labels are not used */
+input:focus + label,
+input:placeholder-shown + label,
+textarea:focus + label,
+textarea:placeholder-shown + label {
+    display: none; /* not needed */
+}
+
+.btn.order {
+    background-color: #F4A261;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn.order:hover {
+    background-color: #e64a19;
+}
+
+
