@@ -28,3 +28,6 @@ contact1.addEventListener("click", function() {
 loginBtn1.addEventListener("click", function() {
     window.location.href = "login.html";  
 });
+
+
+

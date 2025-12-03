@@ -67,3 +67,36 @@ document.getElementById("brownieImg").addEventListener("click", () => {
 
 
 
+// Search functionality → redirect to nav.html section
+function searchFood() {
+    let value = searchInput.value.toLowerCase().trim();
+    if (!value) return;
+
+    let target = "";
+
+    if (value.includes("veg")) {
+        target = "#veg";
+    } 
+    else if (value.includes("nonveg") || value.includes("non-veg") || value.includes("non veg biryani")) {
+        target = "#nonveg";
+    } 
+    else if (value.includes("ghar") || value.includes("thali") || value.includes("all in one") || value.includes("allinone")) {
+        target = "#allinone";
+    } 
+    else if (value.includes("brownie")) {
+        target = "#brownie";
+    } 
+    else {
+        alert("Item not found! Try: veg, nonveg, all in one, brownie");
+        return;
+    }
+
+    // Redirect to nav.html with section hash
+    window.location.href = "nav.html" + target;
+}
+
+// Event listeners
+searchBtn.addEventListener("click", searchFood);
+searchInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") searchFood();
+});
