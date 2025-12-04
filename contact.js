@@ -10,7 +10,7 @@ let loginBtn1=document.querySelector(".loginBtn1");
   });
 
 home2.addEventListener("click", function() {
-    window.location.href = "food.html";  
+    window.location.href = "index.html";  
 });
 
 
@@ -27,7 +27,7 @@ order2.addEventListener("click", function() {
 loginBtn1.addEventListener("click", function() {
     window.location.href = "login.html";  
 });
-<script>
+
 document.addEventListener("DOMContentLoaded", function(){
 
     const form = document.getElementById("contactForm");
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
 
-    // ⭐ RESET BUTTON FUNCTIONALITY
+    //  RESET BUTTON FUNCTIONALITY
     resetBtn.addEventListener("click", function(e){
         e.preventDefault();
 
@@ -73,4 +73,4 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
 });
-</script>
+

@@ -11,7 +11,7 @@ let loginBtn1=document.querySelector(".loginBtn1");
     window.location.reload();
   });
 home1.addEventListener("click", function() {
-    window.location.href = "food.html";  
+    window.location.href = "index.html";  
 });
 
 

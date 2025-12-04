@@ -14,7 +14,7 @@ menu1.addEventListener("click", function(e) {
 
 
 home1.addEventListener("click", function() {
-    window.location.href = "food.html";  
+    window.location.href = "index.html";  
 });
 
 order1.addEventListener("click", function() {
