@@ -190,3 +190,67 @@ footer {
   list-style: none;
   padding: 0;
 }
+@media (max-width: 1024px) {
+  .order-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cart-summary {
+    width: 220px;
+    right: 10px;
+  }
+}
+
+/* 📌 Tablets & Small Laptops */
+@media (max-width: 768px) {
+  .order-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #order-section {
+    margin-top: 150px;
+  }
+
+  .order-item {
+    width: 240px;
+  }
+
+  .cart-summary {
+    position: static;
+    margin: 20px auto;
+    width: 90%;
+  }
+}
+
+/* 📌 Mobile Phones */
+@media (max-width: 480px) {
+  #order-section h1 {
+    font-size: 24px;
+  }
+
+  #order-section p {
+    font-size: 14px;
+  }
+
+  .order-grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+  }
+
+  .order-item {
+    width: 90%;
+  }
+
+  .order-item img {
+    height: 150px;
+  }
+
+  .cart-summary {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .rating span {
+    font-size: 1em;
+  }
+}

@@ -100,3 +100,9 @@ searchBtn.addEventListener("click", searchFood);
 searchInput.addEventListener("keypress", (e) => {
     if (e.key === "Enter") searchFood();
 });
+const menuBtn = document.getElementById("menuBtn");
+const navUL = document.querySelector("nav ul");
+
+menuBtn.addEventListener("click", () => {
+  navUL.classList.toggle("show");
+});
