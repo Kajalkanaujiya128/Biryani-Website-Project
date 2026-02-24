@@ -8,21 +8,23 @@
 
 
 .contact-section {
-     padding: 150px 20px;
+     padding: 120px 20px 60px;
     background: #fff8e1;
     text-align: center; 
     position: relative;
     margin-top: 20px;
     z-index: 990;
+    
 }
 
 .contact-section h1 {
     color: #2B2B2B;
-    margin-bottom: 20px;
+    margin-top: 8px;
+    /* margin-bottom: 20px; */
 }
 
 .contact-section p{
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     color: #2B2B2B;
 }
 
@@ -46,19 +48,19 @@ select, input, textarea {
 }
 
 /* Focus effect for inputs */
-select:focus,
+ select:focus,
 input:focus,
 textarea:focus {
     border-color: #ff5722; 
-}
+} 
 
 /* Remove old + label CSS since labels are not used */
-input:focus + label,
+ input:focus + label,
 input:placeholder-shown + label,
 textarea:focus + label,
 textarea:placeholder-shown + label {
-    display: none; /* not needed */
-}
+    display: none; 
+} 
 
 .btn.order {
     background-color: #F4A261;
@@ -138,4 +140,4 @@ textarea:placeholder-shown + label {
   .contact-form {
     width: 70%;
   }
-}
+} 
